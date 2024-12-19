@@ -1,0 +1,39 @@
+<h4 class="ui center aligned icon header">
+  <i class="circular comment icon"></i>
+  Say Sommething
+</h4>
+
+<div class="ui two column grid">
+
+  <div class="twelve wide column ">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui small feed">
+          <%= render @messages %>
+        </div>
+      </div>
+      <div class="ui action input">
+        <input type="text" placeholder="Enter a meesage...">
+        <button class="ui button">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="four wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
