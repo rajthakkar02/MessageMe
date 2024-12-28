@@ -12,10 +12,10 @@
           <%= render @messages %>
         </div>
       </div>
-      <div class="ui action input">
-        <input type="text" placeholder="Enter a meesage...">
-        <button class="ui button">Send</button>
-      </div>
+      <%= form_for( @message , html: {class: "ui action input"} , url: message_path , method: :post) do |f| %>
+        <%= f.text_field :body , placeholder: "Enter a message..." %>
+        <%= f.button "Send" , class: "ui button" %>
+      <% end %>
     </div>
   </div>
 
